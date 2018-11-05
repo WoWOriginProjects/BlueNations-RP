@@ -37,7 +37,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("S.W.A.T Medic", {
     CustomCheckFailMsg = "This is a Super VIP  job only.",
 })
 
-TEAM_SWATCHEIF = DarkRP.createJob("S.W.A.T Chief", {
+TEAM_SWATCHIEF = DarkRP.createJob("S.W.A.T Chief", {
         color = Color(22, 0, 180, 255),
         model = "models/player/riot.mdl",
         description = [[You're the Chief of swat you lead your men to put down trouble makers
