@@ -1,0 +1,17 @@
+Added Government only doorgroup to police station doors(Nobody can own the door, but Government jobs can unlock the doors)
+Update the doorgroup of the Police Station(ingame) with the *Cops and Mayor only* to enable all the Government jobs to unlock/lock the doors.
+-
+Removed ownership access to doors behind spawn location(nobody can own the doors and admins/super admins can lock/unlock them still.
+-
+Added VIP to categories.lua
+-
+Added Government only Agenda to agendas.lua
+-
+Added Government to demotegroups.lua(If a player is demoted from a government job, they are banned from all government jobs, the time of the ban can be changed in the configs for darkrp)
+-
+Added Government only Groupchat to groupchats.lua
+-
+Added certain jobs to VIP group only and added VIP next to their name in brackets, corrected every typo. jobs.lua
+
+NOVEMBER 4, 2018 - END CHANGELOG FOR NOVEMBER 4
+
