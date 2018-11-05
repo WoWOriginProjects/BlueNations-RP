@@ -9,3 +9,5 @@ AddAgenda(Title of the agenda, Manager (who edits it), {Listeners (the ones who 
 ---------------------------------------------------------------------------]]
 -- Example: AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
 -- Example: AddAgenda("Police agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE})
+
+DarkRP.createAgenda("Government Agenda", {TEAM_MAYOR}, {TEAM_SWATMEDIC, TEAM_SWATCHIEF, TEAM_SWATREG, TEAM_STAFF, TEAM_SS, TEAM_SADMIN, TEAM_POLICE, TEAM_CHIEF, TEAM_FBI, TEAM_FBILEADER, TEAM_SWATCO})
