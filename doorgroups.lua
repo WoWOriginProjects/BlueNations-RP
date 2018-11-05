@@ -11,3 +11,6 @@ AddDoorGroup("NAME OF THE GROUP HERE, you will see this when looking at a door",
 
 -- Example: AddDoorGroup("Cops and Mayor only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR)
 -- Example: AddDoorGroup("Gundealer only", TEAM_GUN)
+
+
+DarkRP.createEntityGroup("Cops and Mayor only", TEAM_MAYOR, TEAM_SWATMEDIC, TEAM_SWATCHIEF, TEAM_SWAGREG, TEAM_STAFF, TEAM_SS, TEAM_SADMIN, TEAM_POLICE, TEAM_CHIEF, TEAM_FBI, TEAM_FBILEADER, TEAM_SWATCO)
