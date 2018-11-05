@@ -19,7 +19,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("S.W.A.T Medic", {
     color = Color(22, 0, 180, 255),
     model = "models/player/Group03m/female_05.mdl",
     description = [[Your duty is to heal on of your
-        wounded operatives. You should stay in the PD
+        wounded operatives, You should stay in the PD
         until backup is needed.
         Do everything you can to keep the city safe.
         You also keep your team healed.]],
@@ -37,10 +37,10 @@ TEAM_SWATMEDIC = DarkRP.createJob("S.W.A.T Medic", {
     CustomCheckFailMsg = "This is a Super VIP  job only.",
 })
 
-TEAM_SWATCHEIF = DarkRP.createJob("S.W.A.T Cheif", {
+TEAM_SWATCHEIF = DarkRP.createJob("S.W.A.T Chief", {
         color = Color(22, 0, 180, 255),
         model = "models/player/riot.mdl",
-        description = [[You're the Cheif of swat you lead your men to put down trouble makers
+        description = [[You're the Chief of swat you lead your men to put down trouble makers
         if there is no mayor you are the next in command.]],
         weapons = {"arrest_stick", "unarrest_stick", "m9k_glock", "m9k_acr", "stunstick", "door_ram", "weaponchecker", "realrbn_tazer"},
         command = "swatc",
@@ -92,11 +92,11 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
     hasLicense = false,
     category = "Criminals",
 })
-TEAM_SS = DarkRP.createJob("Secret Service", {
+TEAM_SS = DarkRP.createJob("Secret Service(VIP)", {
     color = Color(100, 20, 20, 255),
     model = "models/agent_47.mdl",
     description = [[You are responsible for protecting the mayor.
-    Take care of the old fellow, he is vanuarable to terrorists all the time! Before he enters a room, you need to make sure its secure.]],
+    Take care of the old fellow, he is vulnerable to terrorists all the time! Before he enters a room, you need to make sure its secure.]],
     weapons = {"stunstick", "weaponchecker"},
     command = "ss",
     max = 2,
@@ -128,8 +128,8 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
     color = Color(0, 0, 0, 255),
     model = "models/pechenko_121/deadpool/chr_deadpool2.mdl",
     description = [[People hire you to take out other people,
-    this job require you to be completely focussed.
-    A single breath can make you loose a shot.]],
+    this job require you to be completely focussed,
+    A single breath can make you lose a shot.]],
     weapons = {"m9k_m24"},
     command = "hitman",
     max = 2,
@@ -157,7 +157,7 @@ TEAM_TERROR = DarkRP.createJob("Terrorist", {
     category = "Criminals",
 })
 
-TEAM_MTHIEF = DarkRP.createJob("Master Thief", {
+TEAM_MTHIEF = DarkRP.createJob("Master Thief(VIP)", {
     color = Color(0, 0, 0, 255),
     model = "models/csgoanarchist1pm.mdl",
     description = [[You are a thief, rob people, lockpick their house and steal their plants and legal printers.]],
@@ -175,15 +175,15 @@ TEAM_MTHIEF = DarkRP.createJob("Master Thief", {
         ply:SetArmor(100)
     end,
     customCheck = function(ply) return
-        table.HasValue({"user", "Member"}, ply:GetNWString("usergroup"))
+        table.HasValue({"VIP"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "This is a VIP job only.",
 })
 TEAM_DRUGGY = DarkRP.createJob("Drug Dealer", {
     color = Color(51, 204, 255, 255),
     model = "models/playermodels/sterling/ethan_pm.mdl",
-    description = [[You deal drugs to those in need.
-                Be careful, may get arrested if caught in the act!]],
+    description = [[You deal drugs to those in need,
+                Be careful you may get arrested if caught in the act!]],
     weapons = {},
     command = "drug",
     max = 2,
@@ -194,10 +194,10 @@ TEAM_DRUGGY = DarkRP.createJob("Drug Dealer", {
     category = "Criminals",
 })
 
-TEAM_BLACK = DarkRP.createJob("Black Market Dealer", {
+TEAM_BLACK = DarkRP.createJob("Black Market Dealer(VIP)", {
     color = Color(0, 0, 0, 255),
     model = {"models/minson97/bo2/menendez.mdl"},
-    description = [[You are a Black Market Dealer, you sell illegal weapons to everyone but the cops.\
+    description = [[You are a Black Market Dealer, you sell illegal weapons to everyone but the cops,
 Don't get caught.]],
     weapons = {"m9k_glock"},
     command = "blackmarket",
@@ -214,7 +214,7 @@ Don't get caught.]],
         ply:SetArmor(100)
     end,
     customCheck = function(ply) return
-        table.HasValue({"user", "Member"}, ply:GetNWString("usergroup"))
+        table.HasValue({"VIP"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "This is a VIP job only.",
 })
@@ -262,11 +262,11 @@ TEAM_CHIEF = AddExtraTeam("Police Sergeant", {
 	hasLicense = true,
 	category = "Civil Protection",
 })
-TEAM_FBI = AddExtraTeam("F.B.I", {
+TEAM_FBI = AddExtraTeam("F.B.I(VIP)", {
 	color = Color(50, 90, 255, 255),
 	model = "models/fbi_pack/fbi_02.mdl",
-	description =[[ As a F.B.I Special Agent its your job to find
-	Terrorists and kill or arrest them..... 
+	description =[[ As an F.B.I Special Agent its your job to find
+	Terrorists and kill or arrest them. 
 	
 	SALARY:120]],
 	weapons = {"hl2_combo_fists", "fas2_m14", "fas2_ragingbull", "stunstick", "door_ram", "weaponchecker"},
@@ -278,14 +278,14 @@ TEAM_FBI = AddExtraTeam("F.B.I", {
 	hasLicense = false,
 	category = "Civil Protection",
 	    customCheck = function(ply) return
-        table.HasValue({"user", "Member"}, ply:GetNWString("usergroup"))
+        table.HasValue({"VIP"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "This is a VIP job only.",
 })
-TEAM_FBILEADER = AddExtraTeam("F.B.I Leader", {
+TEAM_FBILEADER = AddExtraTeam("F.B.I Leader(VIP)", {
 	color = Color(50, 90, 255, 255),
 	model = "models/fbi_pack/fbi_02.mdl",
-	description = [[As a F.B.I Leader its your job to keep your Agents in order.
+	description = [[As an F.B.I Leader its your job to keep your Agents in order.
 	
 	SALARY:120]],
 	weapons = {"hl2_combo_fists", "fas2_m14", "fas2_ragingbull", "stunstick", "door_ram", "weaponchecker"},
@@ -297,17 +297,17 @@ TEAM_FBILEADER = AddExtraTeam("F.B.I Leader", {
 	hasLicense = false,
 	category = "Civil Protection",
     customCheck = function(ply) return
-        table.HasValue({"user", "Member", "VIP"}, ply:GetNWString("usergroup"))
+        table.HasValue({"VIP"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "This is a Super VIP  job only.",
 })
-TEAM_SWATCO = AddExtraTeam("S.W.A.T Juggernaut", {
+TEAM_SWATCO = AddExtraTeam("S.W.A.T Juggernaut(VIP)", {
     color = Color(10, 10, 100, 255),
     model = "models/player/urban.mdl",
     description = [[As a S.W.A.T Juggernaut it is your
 	job to infiltrate
 	drug labs and and asisest on S.W.A.T high level raids.
-	You are still under the athorty of the S.W.A.T Cheif. 
+	You are still under the authority of the S.W.A.T Chief. 
 	
 	SALARY:450]],
     weapons = {"arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "weapon_mad_m4", "hl2_combo_fists", "weapon_mad_deagle"},
@@ -319,14 +319,14 @@ TEAM_SWATCO = AddExtraTeam("S.W.A.T Juggernaut", {
     hasLicense = true,
 	category = "Civil Protection",
     customCheck = function(ply) return
-        table.HasValue({"user", "Member", "VIP"}, ply:GetNWString("usergroup"))
+        table.HasValue({"VIP"}, ply:GetNWString("usergroup"))
     end,
     CustomCheckFailMsg = "This is a Super VIP  job only.",
 })
 TEAM_BLOOD = DarkRP.createJob("Bloodz Member", {
     color = Color(255, 0, 0, 255),
     model = {"models/player/bloodz/slow_1.mdl"},
-    description = [[You are a Blood. If you see Crips around anywhere, you can kill them on sight .]],
+    description = [[You are a Bloodz, If you see Crips around anywhere, you can kill them on sight .]],
     weapons = {"m9k_m92beretta"},
     command = "blood",
     max = 3,
@@ -340,7 +340,7 @@ TEAM_BLOOD = DarkRP.createJob("Bloodz Member", {
 TEAM_BLOODL = DarkRP.createJob("Bloodz Leader ", {
     color = Color(255, 0, 0, 255),
     model = {"models/player/bloodz/slow_2.mdl"},
-    description = [[You are a Blood Leader. If you see Crips around anywhere, you can kill them on sight .]],
+    description = [[You are a Bloodz Leader, If you see Crips around anywhere, you can kill them on sight.]],
     weapons = {"m9k_m92beretta", "fas2_ks23"},
     command = "bloodl",
     max = 1,
@@ -359,7 +359,7 @@ TEAM_BLOODL = DarkRP.createJob("Bloodz Leader ", {
 TEAM_METH = DarkRP.createJob("Meth Cook", {
     color = Color(255, 0, 0, 255),
     model = {"models/player/hostage/hostage_04.mdl"},
-    description = [[You make meth for the people of the city. Don't get caught.]],
+    description = [[You make meth for the people of the city, Don't get caught.]],
     weapons = {},
     command = "meth",
     max = 4,
