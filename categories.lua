@@ -158,3 +158,12 @@ DarkRP.createCategory{
     canSee = function(ply) return true end,
     sortOrder = 4
 }
+
+DarkRP.createCategory{
+    name = "VIP",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(5, 58, 155, 255),
+    canSee = function(ply) return table.HasValue({"vip"}, ply:GetNWString("usergroup")) end,
+    sortOrder = 6
+}
